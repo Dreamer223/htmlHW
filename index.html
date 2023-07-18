@@ -31,30 +31,3 @@
     </ul>
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Всплывающее окно</title>
-</head>
-<body>
-
-<script>
-function showFavoriteMoviePrompt() {
-    let favoriteMovie = prompt("Введите ваш любимый фильм:", "");
-
-    // Проверяем, если пользователь не ввел название фильма или нажал "Отмена"
-    if (favoriteMovie === null || favoriteMovie === "") {
-        alert("Попробуйте ещё раз.");
-        return;
-    }
-
-    // Выводим сообщение с любимым фильмом
-    alert(`Ваш любимый фильм: ${favoriteMovie}`);
-}
-
-// Вызываем функцию при загрузке страницы
-showFavoriteMoviePrompt();
-</script>
-
-</body>
-</html>
